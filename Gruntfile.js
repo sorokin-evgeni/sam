@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                 options: {
                     baseUrl: config.staticSrc.base,
                     mainConfigFile: config.staticSrc.js + '/require.config.js',
-                    include: ["app", "model/user", "js/app/menu"].concat(grunt.file.expand({cwd: config.staticSrc.js + '/app/modules'}, ['*.js']).map(function(fileName) { return 'module/' + fileName.replace(/\.js$/,'')})),
+                    include: ["app", "js/app/menu", 'js/app/menu', 'model/cars'].concat(grunt.file.expand({cwd: config.staticSrc.js + '/app/modules'}, ['*.js']).map(function(fileName) { return 'module/' + fileName.replace(/\.js$/,'')})),
                     out: config.staticDist.tmpFolder + '/app.js'
                 }
             }

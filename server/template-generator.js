@@ -5,13 +5,14 @@ var grunt = require('grunt'),
     path = require('path'),
     cons = require('consolidate');
 
-exports.index = function(success, enviroment) {
+exports.index = function(success, enviroment, buildVersion) {
     var config = grunt.file.readJSON('config.json'),
         cssList = [],
         jsList = [],
         lessPath = 'lib/less.js/dist/less-1.7.5.js',
         templates = [],
-        enviroment = enviroment || config.enviroment;
+        enviroment = enviroment || config.enviroment,
+        staticConfig = config[enviroment === 'dev' ? 'staticSrc' : 'staticDist'];
 
 
     if (enviroment === 'dev') {
@@ -38,7 +39,10 @@ exports.index = function(success, enviroment) {
         cssList: cssList,
         templates: templates,
         lessPath: lessPath,
-        title: ''
+        title: '',
+        buildVersion: buildVersion,
+        appUrl: staticConfig.appUrl,
+        baseUrl: staticConfig.baseUrl
     }, function(err, html){
         if (err) throw err;
         success(html);

@@ -7,7 +7,9 @@
         "css": "public/css",
         "less": "public/less",
         "js": "public/js",
-        "templates": "public/templates"
+        "templates": "public/templates",
+        "appUrl": "/",
+        "baseUrl": "/"
     },
     "staticDist": {
         "tmpFolder": "dist/tmp",
@@ -15,7 +17,9 @@
         "css": "dist/public/css",
         "js": "dist/public/js",
         "cssBundleName": "main.css",
-        "jsBundleName": "app.js"
+        "jsBundleName": "app.js",
+        "appUrl": "/",
+        "baseUrl": "/"
     }
 
 }

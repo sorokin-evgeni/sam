@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <title><%= title %></title>
     <% _.each(cssList, function(fileName) { %>
-    <link rel="stylesheet" href="css/<%= fileName %>"/>
+    <link rel="stylesheet" href="<%- baseUrl %>css/<%= fileName %>?v=<%= buildVersion %>"/>
     <% }); %>
+
+    <script type="text/javascript">
+        var config = {
+            baseUrl: '<%= baseUrl %>',
+            appUrl: '<%= appUrl %>',
+            buildVersion: '<%= buildVersion %>'
+        };
+    </script>
 
 </head>
 <body>
@@ -14,15 +22,15 @@
         <div class="container-fluid" id="content"></div>
     </div>
 
-<% _.each(templates, function(template) { %>
-<script type="text/template" id="<%= template.name %>">
-    <%= template.content %>
-</script>
-<% }); %>
+    <% _.each(templates, function(template) { %>
+    <script type="text/template" id="<%= template.name %>-template">
+        <%= template.content %>
+    </script>
+    <% }); %>
 
-<% _.each(jsList, function(script) { %>
-<script type="text/javascript" src="js/<%= script %>"></script>
-<% }); %>
+    <% _.each(jsList, function(script) { %>
+    <script type="text/javascript" src="<%- baseUrl %>js/<%= script %>?v=<%= buildVersion %>"></script>
+    <% }); %>
 
 </body>
 </html>
