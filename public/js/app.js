@@ -54,7 +54,6 @@ define('app', ['marionette', 'backbone', 'jquery'], function(Marionette, Backbon
             app.models.cars = new CarsCollection();
             app.models.cars.fetch({
                 success: function() {
-                    console.log('fetched');
                     Backbone.history.start({pushState: true});
                 }
             });

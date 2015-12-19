@@ -23,7 +23,7 @@
     </div>
 
     <% _.each(templates, function(template) { %>
-    <script type="text/template" id="<%= template.name %>-template">
+    <script type="text/template" id="<%= template.name %>">
         <%= template.content %>
     </script>
     <% }); %>
