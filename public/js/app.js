@@ -18,6 +18,8 @@ define('app', ['marionette', 'backbone', 'jquery'], function(Marionette, Backbon
 
         currentModule: '',
 
+        models: {},
+
         regions: {
             Header: '#header',
             Content: '#content',
@@ -47,9 +49,15 @@ define('app', ['marionette', 'backbone', 'jquery'], function(Marionette, Backbon
 
     app.on('start', function() {
         if (!Backbone.history) return;
-        require(['js/app/menu', 'module/users', 'module/home'], function(menu) {
+        require(['js/app/menu', 'model/cars', 'module/cars-list', 'module/favorite', 'module/stat'], function(menu, CarsCollection) {
             app.Header.show(menu);
-            Backbone.history.start({pushState: true});
+            app.models.cars = new CarsCollection();
+            app.models.cars.fetch({
+                success: function() {
+                    console.log('fetched');
+                    Backbone.history.start({pushState: true});
+                }
+            });
         });
     });
 

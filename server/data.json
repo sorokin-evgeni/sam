@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Focus",
+    "brand": "Ford",
+    "description": "Good car",
+    "image": "http://carrrsmag.com/data_images/models/ford-focus/ford-focus-06.jpg",
+    "id": 1
+  },
+  {
+    "name": "Fusion",
+    "brand": "Ford",
+    "description": "",
+    "image": "http://www.ford.com/resources/ford/fusion/2015/content-modules/fusion-content-mod-apply-credit.jpg",
+    "id": 2
+  },
+  {
+    "name": "Scorpio",
+    "brand": "Ford",
+    "description": "",
+    "image": "http://avto-russia.ru/autos/ford/photo/ford_scorpio_1280x1024.jpg",
+    "id": 3
+  },
+  {
+    "name": "XC90",
+    "brand": "Volvo",
+    "description": "",
+    "image": "http://i.quto.ru/c533x400/53fc8bcb624a6.jpeg",
+    "id": 4
+  },
+  {
+    "name": "S60",
+    "brand": "Volvo",
+    "description": "",
+    "image": "http://carspravka.ru/images/auto/5406c3db1220845b985eef6c142a4cef.jpg",
+    "id": 5
+  },
+  {
+    "name": "Juke",
+    "brand": "Nissan",
+    "description": "",
+    "image": "http://s.rdrom.ru/4/catalog/photos/fullsize/nissan/juke/nissan_juke_143406.jpg",
+    "id": 6
+  },
+  {
+    "name": "Quashqai",
+    "brand": "Nissan",
+    "description": "",
+    "image": "http://avtovolgograda.ru/wp-content/uploads/2015/11/Peterburgskij-zavod-Nissan-pristupaet-k-proizvodstvu-Quashqai-vmesto-Teana.jpg",
+    "id": 7
+  },
+  {
+    "name": "Murano",
+    "brand": "Nissan",
+    "description": "",
+    "image": "http://nissan-avtomir.ru/upload/medialibrary/a72/a72b585ea9e8eacb7566da5667a5db16.jpg",
+    "id": 8
+  },
+  {
+    "name": "GTR",
+    "brand": "Nissan",
+    "description": "ept",
+    "image": "http://2.bp.blogspot.com/-aytrIxd0XfQ/VagHr4KIXPI/AAAAAAAAR2w/waWt5cboRQ8/s1600/jotech-nissan-gtr-stage-6-25.jpg",
+    "id": 9
+  }
+]

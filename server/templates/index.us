@@ -9,9 +9,10 @@
 
 </head>
 <body>
-    <header id="header"></header>
-    <main id="content"></main>
-    <footer id="footer"></footer>
+    <div class="container">
+        <nav class="navbar navbar-default" id="header"></nav>
+        <div class="container-fluid" id="content"></div>
+    </div>
 
 <% _.each(templates, function(template) { %>
 <script type="text/template" id="<%= template.name %>">

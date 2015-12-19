@@ -5,6 +5,7 @@ requirejs.config({
         'backbone': 'js/lib/backbone/backbone',
         'marionette': 'js/lib/backbone.marionette/lib/backbone.marionette',
         'underscore': 'js/lib/underscore/underscore',
+        'highcharts': 'js/lib/highcharts/lib/highcharts',
         'jquery': 'js/lib/jquery/dist/jquery',
         'app': 'js/app',
         'module': 'js/app/modules',

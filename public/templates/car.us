@@ -1,0 +1,17 @@
+<td>
+    <div class="image-container">
+        <img src="<%- model.image %>" class="small"/>
+        <img src="<%- model.image %>" class="big"/>
+    </div>
+</td>
+<td><%- model.name %></td>
+<td><%- model.brand %></td>
+<td><%- model.description %></td>
+<td class="width-80">
+    <% if (options.addToFavoriteButton) {%>
+        <button class="btn btn-default" <%- model.favorite ? 'disabled="disabled"' : '' %> data-action="add">Add to favorite</button>
+    <% } %>
+    <% if (options.removeFromFavoriteButton) {%>
+    <button class="btn btn-default" <%- !model.favorite ? 'disabled="disabled"' : '' %> data-action="remove">Remove from favorite</button>
+    <% } %>
+</td>

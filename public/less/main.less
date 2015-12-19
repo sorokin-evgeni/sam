@@ -1,10 +1,29 @@
 body {
-    width: 800px;
-    border: 1px solid black;
-    margin: 0px auto;
-    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-* {
-    text-decoration: none;
+.navbar {
+    margin-bottom: 20px;
 }
+
+.image-container {
+    position: relative;
+
+    img.small {
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    img.big {
+        position: absolute;
+        top: 0;
+        left: 160px;
+        display: none;
+        max-height: 300px;
+        max-width: 300px;
+        border: 1px solid #ccc;
+    }
+}
+
+.width-80 {width: 80px;}

@@ -1,7 +1,7 @@
 {
-  "name": "backbone-marionette-boilerplate",
+  "name": "sam",
   "version": "0.0.1",
-  "description": "Platform for building SPA using Backbone and Marionette",
+  "description": "Test task for samrush",
   "licence": "MIT",
   "dependencies": {
     "express": "4.x",
@@ -29,15 +29,5 @@
     "type": "git",
     "url": "https://github.com/sorokin-evgeni/backbone-marionette-boilerplate.git"
   },
-  "keywords": [
-    "backbone",
-    "marionette",
-    "boilerplate",
-    "application"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sorokin-evgeni/backbone-marionette-boilerplate/issues"
-  },
-  "homepage": "https://github.com/sorokin-evgeni/backbone-marionette-boilerplate"
+  "license": "MIT"
 }

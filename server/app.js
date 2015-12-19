@@ -17,25 +17,8 @@ if (config.enviroment === 'dev') {
     app.use(express.static(path.join(__dirname, '..', 'dist', 'public')));
 }
 
-app.get('/api/user/(:id)?', function(req, res){
-    var userId = req.params.id;
-
-    if (!userId) {
-        res.json({
-            login: 'terminator',
-            name: 'Arnoldo Shunzenfegeld',
-            language: 'ru',
-            id: '1'
-        });
-        return;
-    }
-
-    res.json({
-        id: req.params.id,
-        login: 'randomuser',
-        name: 'Random',
-        language: 'en'
-    });
+app.get('/api/cars', function(req, res){
+    res.sendFile(__dirname + '/data.json');
 });
 
 app.get('/*', function(req, res){
